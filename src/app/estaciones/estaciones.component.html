@@ -1,0 +1,22 @@
+<h1>Estaciones</h1>
+
+
+<table class="table table-hover">
+  <thead>
+  <tr>
+    <th scope="col">ID</th>
+    <th scope="col">Nombre</th>
+    <th scope="col">Ubicacion</th>
+    <th scope="col"># Vagones</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let estacion of estaciones">
+    <th>{{ estacion.id }}</th>
+    <td>{{ estacion.nombre }}</td>
+    <td>{{ estacion.ubicacion }}</td>
+    <td>{{ estacion.vagones }}</td>
+  </tr>
+  </tbody>
+</table>
+

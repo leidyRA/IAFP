@@ -1,0 +1,14 @@
+<div class="row no-gutters">
+
+  <h1 class="col-12 text-center mb-3">Nueva Zona</h1>
+  <nb-card class="col-12">
+    <nb-card-body class="example-items-rows">
+      <input type="text" nbInput placeholder="Nombre" [(ngModel)]="zona.nombre">
+      <input type="text" nbInput placeholder="Color" [(ngModel)]="zona.color">
+    </nb-card-body>
+  </nb-card>
+
+  <div class="col-12">
+    <button nbButton status="success" (click)="guardar()">Guardar</button>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<h1>Zonas</h1>
+
+<table class="table table-hover">
+  <thead>
+  <tr>
+    <th scope="col">ID</th>
+    <th scope="col">Nombre</th>
+    <th scope="col">Color</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let zona of zonas">
+    <th>{{ zona.id }}</th>
+    <td>{{ zona.nombre }}</td>
+    <td>{{ zona.color }}</td>
+  </tr>
+  </tbody>
+</table>
+
+<div class="col-12 text-center">
+  <button nbButton status="primary" (click)="nuevaZona()">Nueva zona</button>
+</div>
